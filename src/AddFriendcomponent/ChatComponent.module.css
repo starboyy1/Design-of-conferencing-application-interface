@@ -1,0 +1,49 @@
+.mainDiv {
+    height: 423px;
+    width: 300px;
+    border: 1px solid lightgrey;
+    margin-left: 20px;
+    border-radius: 8px;
+    margin-top: 8px;
+    /* margin-top: 12px; */
+    
+  }
+  
+  .chatBox {
+    border: 1px solid lightgrey;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 5px;
+    background-color: #FFFFFF;
+    width: 300px;
+    height: 60px;
+  }
+  
+  .chatContent {
+    display: flex;
+    align-items: center;
+  }
+  
+  .profilePic {
+    width: 40px; /* Adjust size as needed */
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .textContent {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .userName {
+    margin: 0;
+    font-size: 16px; /* Adjust font size as needed */
+  }
+  
+  .messageText {
+    margin: 0;
+    font-size: 14px; /* Adjust font size as needed */
+    color: grey; /* Set a different color for message text if desired */
+  }
+  

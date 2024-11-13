@@ -1,0 +1,29 @@
+/* .logo styles for default state */
+.logo {
+    height: 20px;
+    width: 20px;
+    margin-left: 5px;
+    cursor: pointer;
+  }
+  
+  /* .group styles for default state */
+  .group {
+    height: 20px;
+    width: 20px;
+    margin-left: 5px;
+    fill: #FF6500;
+    cursor: pointer;
+    filter: brightness(0) saturate(100%) invert(48%) sepia(97%) saturate(2678%) hue-rotate(359deg) brightness(101%) contrast(102%);
+  }
+  
+  /* Active state for clicked icons */
+  .group.clicked {
+    background-color: #FF6500; 
+    filter: none; /* Keep this as it is for the group */
+  }
+  
+  /* .logo.clicked {
+    background-color: #FF6500;
+    filter: brightness(0) invert(1); Change color to white without affecting background
+  } */
+  

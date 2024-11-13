@@ -1,0 +1,61 @@
+.chatInputBar {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  /* border-top: 1px solid lightgrey; */
+  background-color: #fff;
+}
+
+.inputField {
+  width: 820px;
+  padding: 8px 10px 8px 15px; /* Adjust padding for icon spacing */
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  outline: none;
+}
+
+.inputContainer {
+  position: relative;
+  flex: 1;
+}
+
+.iconAttach {
+  position: absolute;
+  right: 40px; /* Position from the right */
+  top: 50%;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.iconCamera {
+  position: absolute;
+  right: 15px; /* Position closer to the right edge */
+  top: 50%;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.iconMic {
+  /* position: absolute; */
+  /* right: 15px; Position closer to the right edge */
+  top: 50%;
+  margin-left: 22%;
+  /* transform: translateY(-50%); */
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+.iconSend{
+  /* position: absolute; */
+  /* right: 15px; Position closer to the right edge */
+  top: 50%;
+  margin-left:22%;
+  /* transform: translateY(-50%); */
+  width: 20px;
+  height: 20x;
+  cursor: pointer;
+}

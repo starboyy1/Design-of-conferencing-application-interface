@@ -1,0 +1,36 @@
+/* Searchbar.module.css */
+.searchBar {
+    display: flex;
+    align-items: center;
+    margin-left: 0px;
+    margin-top: 8px;
+    background-color: #FFFFFF; /* Light background color */
+    border: 1px solid lightgrey; 
+    border-radius: 6px;
+    width: 60%; 
+    height: 34px;/* Set width as needed */
+   /* Adjust max-width */
+  }
+  
+  .searchIcon {
+    width: 14px; 
+    height: 14px; 
+    margin-left: 5px;
+  }
+  
+  .searchInput {
+    font-family: roboto;
+    border: none;
+    margin-left: 4px;
+    height: 14px;
+    background: none;
+    width: 100%;
+    font-size: 14px;
+    line-height: 16px;
+  }
+  
+  .searchInput:focus {
+    border: none; /* Ensure border is not shown when focused */
+    outline: none; /* Remove the outline */
+}
+  

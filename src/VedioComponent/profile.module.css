@@ -1,0 +1,29 @@
+.profile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.image{
+    margin-top: 100px;
+    width: 130px;
+    height: 130px;
+}
+.icon{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+.vedioChatContainer {
+    position: relative; /* Make the container the reference for positioning */
+    border: 1px solid grey;
+    height: 470px;
+    margin-left: 20px;
+    margin-top: 12px;
+  }
+  .userCamera {
+    position: absolute;
+    bottom: 10px; /* Adjust distance from the bottom */
+    right: 30px; /* Adjust distance from the right */
+    /* Add any additional styling you want for UserCamera */
+  }

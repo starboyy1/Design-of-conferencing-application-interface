@@ -1,0 +1,46 @@
+.height{
+  height:40px;
+}
+.plexar-logo{
+  margin-top: 5px;
+}
+.vertical-line {
+  width: 1px;
+  height: 24px; /* Adjust height as needed */
+  background-color: white; /* Adjust color as needed */
+  margin-left: 15px;
+  align-items: center;
+  margin-top: 3px; /* Space between the line and the setting icon */
+}
+.expert-logo {
+  margin-left: 10px;
+  width: 20px;
+  height: 20px; /* Space between the line and the avatar */
+}
+p{
+  font-size: 12px;
+  margin-left: 8px;
+  color: white;
+}
+.user-logo{
+  margin-left: 20px;
+}
+.margin{
+  margin-top: 6px;
+}
+
+.text-container {
+  margin-left: 10px;
+  /* text-align: left; Align text to the left */
+  display: flex;
+  flex-direction: column;
+}
+
+.text-container p {
+  margin: 0; /* Remove default margin */
+}
+
+.subtitle {
+  font-size: 10px; /* Adjust size as needed */
+  color: white; /* Adjust color as needed */
+}
