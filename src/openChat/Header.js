@@ -2,8 +2,8 @@ import React from "react";
 import profilePic from "../Images/Profile.png";
 import styles from "./header.module.css";
 // import Calls from './Calls';
-import vedio from "../Images/video.png";
-import phone from "../Images/phone 1.png";
+import { ReactComponent as vedio } from "../Images/vedio.svg";
+import { ReactComponent as audio } from "../Images/phone.svg";
 import line from "../Images/vertical.png";
 
 function Header() {
@@ -29,11 +29,11 @@ function Header() {
         }}
       >
         <div>
-        <img src={vedio} alt="#" className={styles.vedioImg} />
+        <vedio   alt="#" className={styles.vedioImg} />
         </div>
         <div className={styles.verticalline}></div>
         <div>
-        <img src={phone} alt="#" className={styles.phoneImg} />
+        <audio src={audio} alt="#" className={styles.phoneImg} />
         </div>
         
       </div>

@@ -1,17 +1,18 @@
-/* .logo styles for default state */
 .logo {
     height: 20px;
     width: 20px;
     margin-left: 5px;
     cursor: pointer;
+    margin-bottom: 25px;
+    margin-top: 12px;
   }
-  
-  /* .group styles for default state */
-  .group {
+.group {
+    margin-bottom: 25px;
+    margin-top: 12px;
     height: 20px;
     width: 20px;
     margin-left: 5px;
-    fill: #FF6500;
+    /* fill: #FF6500; */
     cursor: pointer;
     filter: brightness(0) saturate(100%) invert(48%) sepia(97%) saturate(2678%) hue-rotate(359deg) brightness(101%) contrast(102%);
   }
@@ -20,6 +21,14 @@
   .group.clicked {
     background-color: #FF6500; 
     filter: none; /* Keep this as it is for the group */
+  }
+  .logo.clicked {
+    background-color: #FF6500; 
+    /* width: 20px; */
+   /* Keep this as it is for the group */
+    /* fill: transparent;
+     */
+     stroke: white
   }
   
   /* .logo.clicked {

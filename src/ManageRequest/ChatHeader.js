@@ -2,8 +2,10 @@ import React from "react";
 import profilePic from "../Images/Profile.png";
 import styles from "../openChat/header.module.css";
 // import Calls from './Calls';
-import vedio from "../Images/video.png";
-import phone from "../Images/phone 1.png";
+// import vedio from "../Images/video.png";
+// import phone from "../Images/phone 1.png";
+import { ReactComponent as VedioIcon } from "../Images/vedio.svg";
+import { ReactComponent as Audio } from "../Images/phone.svg";
 import line from "../Images/vertical.png";
 
 function ChatHeader() {
@@ -29,11 +31,11 @@ function ChatHeader() {
         }}
       >
         <div>
-        <img src={vedio} alt="#" className={styles.vedioImg} />
+        <VedioIcon src alt="#" className={styles.vedioImg} />
         </div>
         <div className={styles.verticalline}></div>
         <div>
-        <img src={phone} alt="#" className={styles.phoneImg} />
+        <Audio alt="#" className={styles.phoneImg} />
         </div>
         
       </div>

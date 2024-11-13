@@ -1,15 +1,15 @@
 import React from 'react'
-import Reject from '../Images/Reject.png'
+import { ReactComponent as Decline } from './Logo/Declineicon.svg';
 
 function Rejecticon() {
   return (
     
-    <img
+    <Decline
     style={{
         width:'60px',
         height:'60px'
     }}
-    src={Reject}
+    src={Decline}
     alt='Reject'
     
     />

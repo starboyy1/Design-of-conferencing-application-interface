@@ -1,14 +1,13 @@
-// Updated Sidebar.js
 import React, { useState } from "react";
 import styles from "../Style/Sidebar.module.css";
-import first from "../SidebarIcons/First.png";
-import second from "../SidebarIcons/sec.png";
-import third from "../SidebarIcons/third.png";
-import fourth from "../SidebarIcons/fourth.png";
-import fifth from "../SidebarIcons/fifth.png";
-import sixth from "../SidebarIcons/sixth.png";
-import seven from "../SidebarIcons/seventh.png";
-import eight from "../SidebarIcons/eigth.png";
+import { ReactComponent as FirstIcon } from "../SidebarIcons/First.svg";
+import { ReactComponent as SecondIcon } from "../SidebarIcons/Second.svg";
+import { ReactComponent as ThirdIcon } from "../SidebarIcons/Third.svg";
+import { ReactComponent as FourthIcon } from "../SidebarIcons/twelve.svg";
+import { ReactComponent as FifthIcon } from "../SidebarIcons/Fifth.svg";
+import { ReactComponent as SixthIcon } from "../SidebarIcons/ten.svg";
+import { ReactComponent as SevenIcon } from "../SidebarIcons/Seventh.svg";
+import { ReactComponent as EightIcon } from "../SidebarIcons/Eight.svg";
 
 function Sidebar() {
   const [activeIcon, setActiveIcon] = useState(null); // State to track the clicked icon
@@ -27,54 +26,38 @@ function Sidebar() {
         borderRadius: "6px",
         display: "flex",
         flexDirection: "column",
-        justifyContent: "space-evenly",
+        // justifyContent: "space-evenly",
       }}
     >
-      <img
-        src={first}
-        alt=""
+      <FirstIcon
         className={`${styles.logo} ${activeIcon === "first" ? styles.clicked : ""}`}
         onClick={() => handleClick("first")}
       />
-      <img
-        src={second}
-        alt=""
+      <SecondIcon
         className={`${styles.group} ${activeIcon === "second" ? styles.clicked : ""}`}
         onClick={() => handleClick("second")}
       />
-      <img
-        src={third}
-        alt=""
+      <ThirdIcon
         className={`${styles.logo} ${activeIcon === "third" ? styles.clicked : ""}`}
         onClick={() => handleClick("third")}
       />
-      <img
-        src={fourth}
-        alt=""
+      <FourthIcon
         className={`${styles.logo} ${activeIcon === "fourth" ? styles.clicked : ""}`}
         onClick={() => handleClick("fourth")}
       />
-      <img
-        src={fifth}
-        alt=""
+      {/* <FifthIcon
         className={`${styles.logo} ${activeIcon === "fifth" ? styles.clicked : ""}`}
         onClick={() => handleClick("fifth")}
       />
-      <img
-        src={sixth}
-        alt=""
+      <SixthIcon
         className={`${styles.logo} ${activeIcon === "sixth" ? styles.clicked : ""}`}
         onClick={() => handleClick("sixth")}
       />
-      <img
-        src={seven}
-        alt=""
+      <SevenIcon
         className={`${styles.logo} ${activeIcon === "seven" ? styles.clicked : ""}`}
         onClick={() => handleClick("seven")}
-      />
-      <img
-        src={eight}
-        alt=""
+      /> */}
+      <EightIcon
         className={`${styles.logo} ${activeIcon === "eight" ? styles.clicked : ""}`}
         onClick={() => handleClick("eight")}
       />

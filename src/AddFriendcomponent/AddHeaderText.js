@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from "../Style/Subheader.module.css";
-import logo from "../Images/Sub_header logo.png";
+import logo from "../Images/Subheader_logo.svg";
 
 
 function AddHeaderText({onLogoClick,}) {

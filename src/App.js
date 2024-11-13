@@ -15,35 +15,45 @@ import CallHeader from "./VedioComponent/CallHeader";
 
 function App() {
   const [isAlternateView, setIsAlternateView] = useState(false);
-  const[isAddFriend,setIsAddFriend] =useState(false);
-  
-  const handleAddFriend = () =>{
+  const [isAddFriend, setIsAddFriend] = useState(false);
+
+  const handleAddFriend = () => {
     setIsAddFriend(!isAddFriend);
     setIsAlternateView(false);
-    console.log("button is clicked")
-  }
+    console.log("button is clicked");
+  };
 
   const handleToggleView = () => {
     setIsAlternateView(!isAlternateView);
     setIsAddFriend(false);
     console.log("Toggle button clicked");
   };
-  const handleHome =()=>{
+  const handleHome = () => {
     setIsAlternateView(false);
     setIsAddFriend(false);
-    console.log("button is clicked")
-    }
+    console.log("button is clicked");
+  };
   return (
     <div>
       <Navbar />
-      {isAddFriend?(
-        <AddSubHeader onAddFriend={handleAddFriend} onLogoClick={handleHome} onButtonClick={handleToggleView}/>
-
-      ):
-      isAlternateView ? (
-        <ManageHeader onButtonClick={handleToggleView} onAddFriend={handleAddFriend} onLogoClick={handleHome} />
+      {isAddFriend ? (
+        <AddSubHeader
+          onAddFriend={handleAddFriend}
+          onLogoClick={handleHome}
+          onButtonClick={handleToggleView}
+        />
+      ) : isAlternateView ? (
+        <ManageHeader
+          onButtonClick={handleToggleView}
+          onAddFriend={handleAddFriend}
+          onLogoClick={handleHome}
+        />
       ) : (
-        <Subheader onButtonClick={handleToggleView} onClick ={handleHome} onLogoClick={handleHome} />
+        <Subheader
+          onButtonClick={handleToggleView}
+          onClick={handleAddFriend}
+          onLogoClick={handleHome}
+        />
       )}
       {/* <CallHeader/> */}
       {/* <AddSubHeader/> */}
@@ -62,18 +72,20 @@ function App() {
           <Sidebar />
         </div>
         <div className=" col-lg-3 col-md-6 col-10">
-          {isAddFriend?
-          (
-            <Chat/>
-          ):
-          isAlternateView ? 
-          (<RequestBox/> )
-          : (<ChatComponent />)
-          } 
+          {isAddFriend ? (
+            <Chat />
+          ) : isAlternateView ? (
+            <RequestBox />
+          ) : (
+            <ChatComponent />
+          )}
         </div>
         <div className=" col-lg-6">
-        <OpenChat isAlternateView={isAlternateView} isAddFriend={isAddFriend}/>
-        </div> 
+          <OpenChat
+            isAlternateView={isAlternateView}
+            isAddFriend={isAddFriend}
+          />
+        </div>
         {/* <VedioChat/> */}
       </div>
     </div>

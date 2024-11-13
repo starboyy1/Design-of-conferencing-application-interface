@@ -1,9 +1,9 @@
 import React from 'react'
-import Accept from '../Images/Accept.png'
+import { ReactComponent as Accept } from './Logo/Accepticon.svg';
 
 function Accepticon() {
   return (
-    <img
+    <Accept
     style={{
         width:'60px',
         height:'60px',
